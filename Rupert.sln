@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RupertWebClient", "RupertWebClient\RupertWebClient.csproj", "{A81E1AB0-1614-4CC3-9EC1-F8F5E0F71045}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RupertUIFeatures", "RupertUIFeatures\RupertUIFeatures.csproj", "{EE8105C4-54D5-4B3C-9E34-E91DBA1FBAC5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A81E1AB0-1614-4CC3-9EC1-F8F5E0F71045}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A81E1AB0-1614-4CC3-9EC1-F8F5E0F71045}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A81E1AB0-1614-4CC3-9EC1-F8F5E0F71045}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A81E1AB0-1614-4CC3-9EC1-F8F5E0F71045}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE8105C4-54D5-4B3C-9E34-E91DBA1FBAC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE8105C4-54D5-4B3C-9E34-E91DBA1FBAC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE8105C4-54D5-4B3C-9E34-E91DBA1FBAC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE8105C4-54D5-4B3C-9E34-E91DBA1FBAC5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
