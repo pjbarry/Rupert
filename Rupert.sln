@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RupertWebClient", "RupertWe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RupertUIFeatures", "RupertUIFeatures\RupertUIFeatures.csproj", "{EE8105C4-54D5-4B3C-9E34-E91DBA1FBAC5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Networking", "Networking\Networking.csproj", "{9281A412-51BA-40A9-BCD8-6E5281C9ECAC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,10 @@ Global
 		{EE8105C4-54D5-4B3C-9E34-E91DBA1FBAC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE8105C4-54D5-4B3C-9E34-E91DBA1FBAC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE8105C4-54D5-4B3C-9E34-E91DBA1FBAC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9281A412-51BA-40A9-BCD8-6E5281C9ECAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9281A412-51BA-40A9-BCD8-6E5281C9ECAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9281A412-51BA-40A9-BCD8-6E5281C9ECAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9281A412-51BA-40A9-BCD8-6E5281C9ECAC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
