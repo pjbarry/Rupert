@@ -10,10 +10,7 @@ namespace RupertUIFeatures.step_definitions.PageObjects
 {
     public abstract class PageObject
     {
-        public PageObject()
-        {
-            Configuration.Browser = Coypu.Drivers.Browser.HtmlUnit;
-        }
+     
         public void Visit()
         {
             Browser.Visit(PageUrl);
@@ -27,7 +24,7 @@ namespace RupertUIFeatures.step_definitions.PageObjects
 
         protected string PageUrl { get; set; }
 
-        public Session Browser { get; set; }
+        public BrowserSession Browser { get; set; }
 
         public abstract void is_displayed_in_browser();
 

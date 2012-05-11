@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Coypu;
 using RupertUIFeatures.step_definitions.PageObjects;
 using TechTalk.SpecFlow;
 
@@ -10,9 +11,13 @@ namespace RupertUIFeatures.step_definitions
     [Binding]
     public class Network : PageFixture
     {
+          
+        public Network(BrowserSession browser) : base(browser)
+        {
+        }
 
-        [Given(@"I have entered opened the configuration screen")]
-        public void GivenIHaveEnteredOpenedTheConfigurationScreen()
+        [Given(@"I have opened the configuration screen")]
+        public void GivenIHaveOpenedTheConfigurationScreen()
         {
             on_page<LandingPage>(page => page.Config(), true);
         }

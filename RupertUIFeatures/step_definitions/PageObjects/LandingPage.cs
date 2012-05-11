@@ -6,12 +6,12 @@ namespace RupertUIFeatures.step_definitions.PageObjects
     {
         public LandingPage()
         {
-            PageUrl = "/home";
+            PageUrl = "/";
         }
 
         public override void is_displayed_in_browser()
         {
-            Assert.That(Browser.HasContent("Order Form"));
+            Assert.That(Browser.HasContent("Rupert"));
         }
 
         public void Config()

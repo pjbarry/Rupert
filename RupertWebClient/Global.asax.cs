@@ -24,9 +24,9 @@ namespace Rupert
             routes.MapRoute(
                 "Default", // Route name
                 "{controller}/{action}/{id}", // URL with parameters
-                new { controller = "Home", action = "Index", id = UrlParameter.Optional } // Parameter defaults
+                new { controller = "Rupert", action = "home", id = UrlParameter.Optional } // Parameter defaults
             );
-
+         
         }
 
         protected void Application_Start()

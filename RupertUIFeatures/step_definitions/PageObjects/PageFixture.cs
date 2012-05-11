@@ -7,23 +7,33 @@ namespace RupertUIFeatures.step_definitions.PageObjects
     [Binding]
     public abstract class PageFixture
     {
-        protected PageFixture()
+        protected readonly BrowserSession _browser;
+        protected PageFixture(BrowserSession browser)
         {
-            Configuration.Port = 1974;
-            //Configuration.Browser = Coypu.Drivers.Browser.Chrome;
+            _browser = browser;
         }
 
         protected void on_page<T>(Action<T> action, bool visit = false) where T : PageObject, new()
         {
-            var page = new T { Browser = Browser.Session };
-            if (visit) page.Visit();
-            action(page);
+            try
+            {
+                var page = new T();
+                page.Browser = _browser;
+                if (visit) page.Visit();
+                action(page);
+            }
+            catch (Exception)
+            {
+                Console.WriteLine((_browser.Native as OpenQA.Selenium.Remote.RemoteWebDriver).PageSource);
+                throw;
+            }
         }
 
         protected void visit_page<T>() where T : PageObject, new()
         {
-            var page = new T { Browser = Browser.Session };
-            page.Visit();
+            var page = new T();
+            page.Browser = _browser;
+            page.Visit();   
         }
     }
 }
