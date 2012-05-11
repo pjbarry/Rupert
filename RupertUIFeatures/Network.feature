@@ -5,7 +5,7 @@
 
 
 Scenario: View possible Murdochs
-	Given I have entered opened the configuration screen
+	Given I have opened the configuration screen
 	When I click 'View Network'
 	Then a list of machines on the network should appear 
 	And an indicator wether each machine is a Murdoch should be shown
