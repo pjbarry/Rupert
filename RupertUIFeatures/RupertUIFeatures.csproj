@@ -69,6 +69,7 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="step_definitions\BrowserManager.cs" />
+    <Compile Include="step_definitions\PageObjects\ConfigPage.cs" />
     <Compile Include="step_definitions\Network.cs" />
     <Compile Include="step_definitions\PageObjects\LandingPage.cs" />
     <Compile Include="step_definitions\PageObjects\PageFixture.cs" />

@@ -25,7 +25,7 @@ namespace RupertUIFeatures.step_definitions
         [When(@"I click 'View Network'")]
         public void WhenIClickViewNetwork()
         {
-            ScenarioContext.Current.Pending();
+           on_page<ConfigPage>(page => page.ViewNetwork(), true);
         }
 
         [Then(@"a list of machines on the network should appear")]
