@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Coypu;
 using RupertUIFeatures.step_definitions.PageObjects;
 using TechTalk.SpecFlow;
-
+using Shouldly;
 namespace RupertUIFeatures.step_definitions
 {
     [Binding]
@@ -31,11 +30,11 @@ namespace RupertUIFeatures.step_definitions
         [Then(@"a list of machines on the network should appear")]
         public void ThenAListOfMachinesOnTheNetworkShouldAppear()
         {
-            ScenarioContext.Current.Pending();
+           on_page<NetworkPage>(page => page.MachineCount.ShouldBeGreaterThanOrEqualTo(1));
         }
 
-        [Then(@"an indicator wether each machine is a Murdoch should be shown")]
-        public void ThenAnIndicatorWetherEachMachineIsAMurdochShouldBeShown()
+        [Then(@"an indicator whether each machine is a Murdoch should be shown")]
+        public void ThenAnIndicatorWhetherEachMachineIsAMurdochShouldBeShown()
         {
             ScenarioContext.Current.Pending();
         }

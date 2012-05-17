@@ -79,7 +79,7 @@ this.ScenarioSetup(scenarioInfo);
 #line 10
  testRunner.Then("a list of machines on the network should appear");
 #line 11
- testRunner.And("an indicator wether each machine is a Murdoch should be shown");
+ testRunner.And("an indicator whether each machine is a Murdoch should be shown");
 #line hidden
             this.ScenarioCleanup();
         }

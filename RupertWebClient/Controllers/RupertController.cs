@@ -11,12 +11,17 @@ namespace Rupert.Controllers
         //
         // GET: /Rupert/
 
-        public ActionResult home()
+        public ActionResult Home()
         {
             return View();
         }
 
-        public ActionResult config()
+        public ActionResult Config()
+        {
+            return View();
+        }
+
+        public ActionResult Network()
         {
             return View();
         }
