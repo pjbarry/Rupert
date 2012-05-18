@@ -1,7 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Coypu;
+﻿using Coypu;
 using RupertUIFeatures.step_definitions.PageObjects;
 using TechTalk.SpecFlow;
 using Shouldly;
