@@ -1,0 +1,3 @@
+[submodule "Externals\\cornichon"]
+	path = Externals\\cornichon
+	url = git://github.com/DocLeon/cornichon.git
